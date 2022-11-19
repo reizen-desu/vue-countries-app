@@ -1,0 +1,34 @@
+@import './src/assets/scss/variables';
+
+.country-card {
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  cursor: pointer;
+
+  &--dark {
+    background-color: $dark-mode-elements;
+    & span:nth-child(2) {
+      color: $light-mode-input;
+    }
+  }
+  &__imgbox {
+    height: 50%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__body {
+    padding: 20px;
+  }
+
+  &__list-item {
+    list-style: none;
+    line-height: 2;
+  }
+}

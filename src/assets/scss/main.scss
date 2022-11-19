@@ -1,0 +1,32 @@
+@import 'variables';
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+input {
+  // color: #555;
+  font-size: $detail-page-font-size;
+}
+
+.app-wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  background-color: $light-mode-background;
+  color: $light-mode-text;
+
+  &--dark {
+    background-color: $dark-mode-background;
+    color: $white;
+  }
+}
+
+.boldish {
+  font-weight: $font-normal;
+}
